@@ -304,6 +304,7 @@ string Menu::STR_Menu(string tital, vector<string> Options){
 string Menu::STR_Menu_From_File(string File){
 	string Lines;
 	Items.clear();
+	Selected = 0;
 	ifstream Load(File.c_str());
 	if (Load.is_open()){
 		getline(Load, Tital);

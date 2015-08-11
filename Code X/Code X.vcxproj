@@ -72,6 +72,8 @@
     <ClInclude Include="Includes.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="Decrypter.txt" />
+    <Text Include="Encrypter.txt" />
     <Text Include="Main Menu.txt" />
     <Text Include="Password Genorator.txt" />
   </ItemGroup>

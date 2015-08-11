@@ -1,0 +1,7 @@
+Decrypter
+Enter String
+Enter File
+Enter Password
+Enter Decryption Level
+Decrypt
+Back

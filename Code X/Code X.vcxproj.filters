@@ -40,5 +40,11 @@
     <Text Include="Password Genorator.txt">
       <Filter>Menu Files</Filter>
     </Text>
+    <Text Include="Encrypter.txt">
+      <Filter>Menu Files</Filter>
+    </Text>
+    <Text Include="Decrypter.txt">
+      <Filter>Menu Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
