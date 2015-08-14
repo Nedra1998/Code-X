@@ -57,6 +57,7 @@ void Encrypt(){
 	vector<int>Values;
 	while (Action != "Back"){
 		Action = M.STR_Menu_From_File("Encrypter.txt");
+		C.SCS("r", "bl");
 		if (Action == "Enter String"){
 			C.C("Enter String");
 			C.C("=============================");
@@ -91,6 +92,7 @@ void Encrypt(){
 			cin >> Encryption_Level;
 		}
 		if (Action == "Encrypt"){
+			C.SCS("y", "bl");
 			int password = 0;
 			for (int a = 0; a < Password.size(); a++){
 				password = password + int(Password[a]);
@@ -154,6 +156,21 @@ void Encrypt(){
 				}
 				C.C(Encrypted_String);
 			}
+			C.SCS("g", "bl");
+			C.C("Compleated Encryptions");
+			C.C("=============================");
+			C.C("Original String/File:");
+			C.C(To_Encrypt_String);
+			C.C("Password:");
+			C.C(Password);
+			C.C("Encryption Level:");
+			C.C(to_string(Encryption_Level));
+			C.C("Final String:");
+			C.C(Encrypted_String);
+			for (int a = 11; a < Lines; a++){
+				cout << endl;
+			}
+			C.GC();
 		}
 	}
 }
@@ -283,6 +300,21 @@ void Decrypt(){
 				
 				C.C(Decrypted_String);
 			}
+			C.SCS("g", "bl");
+			C.C("Compleated Decrypted");
+			C.C("=============================");
+			C.C("Original String/File:");
+			C.C(To_Decrypt_String);
+			C.C("Password:");
+			C.C(Password);
+			C.C("Encryption Level:");
+			C.C(to_string(Encryption_Level));
+			C.C("Final String:");
+			C.C(Decrypted_String);
+			for (int a = 11; a < Lines; a++){
+				cout << endl;
+			}
+			C.GC();
 		}
 	}
 }
